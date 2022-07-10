@@ -41,5 +41,6 @@ export const theme = {
       white: '#fff',
       scrollbar: '#4d4d57',
       discover: '#6a80ff',
-  }
+  },
+  
 }

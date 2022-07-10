@@ -1,14 +1,13 @@
 import styled from "styled-components";
-import backgroundImg from '../../images/background.jpg'
 
 export const Container = styled.main `
   width: 100%;
   height: 600px;
-  margin-top: 7rem;
   text-align: center;
   color: white;
   justify-content: space-between;
   align-items: center;
+  background: url('/images/fundo.jpg') no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom: 1px solid ${({theme}) => theme.colors.primary};
