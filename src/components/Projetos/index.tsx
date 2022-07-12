@@ -1,6 +1,3 @@
-import Link from 'next/link';
-import { AiFillGithub } from 'react-icons/ai';
-import ScrollReveal from '../ScrollReveal';
 import { AspectRatioDemo } from './radixImg';
 import { Container, Content } from "./styles";
 

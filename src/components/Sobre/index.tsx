@@ -1,8 +1,5 @@
 import { IconName } from './Icons';
 import { Container, Foto, SobreMim } from "./styles";
-import Image from 'next/image'
-
-
 
 export function Sobre () {
   return (

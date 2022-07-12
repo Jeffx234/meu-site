@@ -1,12 +1,19 @@
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Container } from "./styles";
 import Link from 'next/link'
+import { useState } from 'react';
 
 interface Props {
   toggleTheme: () => void;
 }
 
 export function Header () {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const handleToggleMenu = () => {
+    setOpenMenu(!openMenu);
+  }
+
 
   return(
     <Container>
@@ -21,14 +28,14 @@ export function Header () {
 
           <li>
             <Link href="https://github.com/">
-              <a> Contact </a>
+              <a> Contato </a>
             </Link>
           </li>
 
 
           <li>
             <Link href="https://github.com/">
-              <a> About </a>
+              <a> Sobre </a>
             </Link>
           </li>
 
@@ -38,14 +45,46 @@ export function Header () {
               <a> Home </a>
             </Link>
           </li>
-
-      
         </ul> 
 
         <div className="toggle">
-            <GiHamburgerMenu size="30" />
+            {
+              openMenu ? (
+                <GiHamburgerMenu size="30" onClick={handleToggleMenu} />
+              ) : (
+                <p>deletar</p>
+              )
+            }
         </div>
-   
+        {
+          openMenu ? (
+            <ul className="menu">
+              <li>
+                <Link href="">
+                  <a> Inicio </a>
+                </Link>
+              </li>
+
+              <li>
+                <Link href="">
+                  <a> Contato </a>
+                </Link>
+              </li>
+
+              <li>
+                <Link href="">
+                  <a> Home </a>
+                </Link>
+              </li>
+
+              <li>
+                <Link href="">
+                  <a> Sobre </a>
+                </Link>
+              </li>
+            </ul>
+          ) : null
+        }
       </nav>
     </Container>
   )
