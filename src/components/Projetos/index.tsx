@@ -10,7 +10,6 @@ export function Projetos() {
     <Container>
       <h1 className="proj"> <span> &lt; </span>  Projetos <span> &gt;</span> </h1>
       <Content>
-        <ScrollReveal>
           <div className="projeto">
             <div className="projeto-img">
              <AspectRatioDemo 
@@ -22,9 +21,7 @@ export function Projetos() {
               />
             </div>
           </div>
-        </ScrollReveal>
 
-        <ScrollReveal>
           <div className="projeto">
             <div className="projeto-img">
                 <AspectRatioDemo 
@@ -36,9 +33,7 @@ export function Projetos() {
                 />
             </div>
           </div>
-        </ScrollReveal>
 
-        <ScrollReveal>
           <div className="projeto">
             <div className="projeto-img">
               <AspectRatioDemo 
@@ -50,9 +45,7 @@ export function Projetos() {
               />
             </div>
           </div>
-        </ScrollReveal>
 
-        <ScrollReveal>
           <div className="projeto">
             <div className="projeto-img">
               <AspectRatioDemo 
@@ -64,7 +57,6 @@ export function Projetos() {
               />
             </div>
           </div>
-        </ScrollReveal>
       </Content>
     </Container>
   )

@@ -7,19 +7,19 @@ export function Skills() {
       <h1>  Skills </h1>
       <Content>
         <div className="bg-zinc-900 flex items-center justify-center p-4 rounded-lg">
-          <img src="/images/Vector.svg" alt="Vector"  />
+          <Image src="/images/Vector.svg" alt="Zinc" width={100} height={100} />
         </div>
         <div className="bg-zinc-900 flex items-center justify-center p-4 rounded-lg">
-          <img src="/images/Vector1.svg" alt="Vector"  />
+          <Image src="/images/Vector1.svg" alt="Zinc" width={100} height={100} />
         </div>
         <div className="bg-zinc-900 flex items-center justify-center p-4 rounded-lg">
-          <img src="/images/Vector2.svg" alt="Vector"  />
+          <Image src="/images/Vector2.svg" alt="Zinc" width={100} height={100} />
         </div>
         <div className="bg-zinc-900 flex items-center justify-center p-4 rounded-lg">
-          <img src="/images/Vector3.svg" alt="Vector"  />
+          <Image src="/images/Vector3.svg" alt="Zinc" width={100} height={100} />
         </div>
         <div className="bg-zinc-900 flex items-center justify-center p-4 rounded-lg">
-          <img src="/images/Vector4.svg" alt="Vector"  />
+         <Image src="/images/Vector4.svg" alt="Zinc" width={100} height={100} />
         </div>
       </Content>
     </Container>
