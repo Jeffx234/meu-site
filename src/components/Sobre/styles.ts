@@ -15,7 +15,7 @@ export const Container = styled.section `
     width: 100%;
     border-radius: .5rem;
     height: 100%;
-    object-fit: cover;
+    object-fit: 100%;
   }
 
   .item {
@@ -73,6 +73,7 @@ export const Foto = styled.div`
 
 export const SobreMim = styled.div`
   margin-left: 1rem;
+  padding: 1rem;
   width: 60%;
   text-align: center;
   border-left: 1px solid ${({theme}) => theme.colors.green};

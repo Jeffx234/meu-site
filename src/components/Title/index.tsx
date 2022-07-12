@@ -12,7 +12,7 @@ export function Title ()  {
 
   return (
     <Container>
-      <Name>
+      <Name className="absolute">
         <div className="helloworld">
           <img src="/images/Hi.gif" />
           <p> Hello world! </p>
@@ -35,6 +35,9 @@ export function Title ()  {
             </a>
         </div>
       </Name>
+      <div className="image">
+        <img src="/images/logger.png" alt="Foto logo"  />
+      </div>
     </Container>
   )
 }

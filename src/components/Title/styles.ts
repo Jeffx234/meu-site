@@ -2,15 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.main `
   width: 100%;
+  display: flex;
   height: 600px;
   text-align: center;
   color: white;
   justify-content: space-between;
   align-items: center;
-  background: url('/images/fundo.jpg') no-repeat center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   border-bottom: 1px solid ${({theme}) => theme.colors.primary};
+  padding: 4rem;
 
   .helloworld {
     display: flex;
@@ -33,27 +32,45 @@ export const Container = styled.main `
   
 
   @media(max-width: 750px) {
-    border: 1px solid red;
+    padding-top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 2rem;
+    .image {
+      display: none;
+    }
 
     h1 {
       text-align: center;
     }
   }
 
-  @media(max-width: 1024px) {
-    padding-top: 10rem;
+
+  .image {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
 
   }
+
 `;
 
 
 
 export const Name = styled.div`
-width: 60%;
-margin: auto;
 display: flex;
 flex-direction: column;
 align-items: center;
+position: relative;
 
 .icons {
   display: flex;
@@ -79,18 +96,16 @@ align-items: center;
 }
 
 p {
-  font-size: 3.5rem;
-  line-height: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
 }
   
   h1 {
-    font-size: 5.5rem;
+    font-size: 3.5rem;
   }
 
   p{
-    margin-bottom: 1rem;
-
-
+  
     span {
       color: ${({theme}) => theme.colors.primary};
       font-weight: bold;

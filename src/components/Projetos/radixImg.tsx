@@ -7,18 +7,48 @@ export const AspectRatio = AspectRatioPrimitive;
 
 // Your app...
 const BoxContainer = styled('div', {
-  width: '800px',
-
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  height: '100%',
+  width: '100%',
+  backgroundColor: '#fff',
+  borderRadius: '4px',
+  boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.25)',
+  overflow: 'hidden',
+  position: 'relative',
+  cursor: 'pointer',
+  transition: 'all 0.2s ease-in-out',
+  '&:hover': {
+    boxShadow: '0px 0px 8px rgba(0, 0, 0, 0.25)',
+    transform: 'scale(1.05)',
+  },
+  '&:after': {
+    content: '""',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#fff',
+    opacity: 0,
+    transition: 'all 0.2s ease-in-out',
+    borderRadius: '4px',
+    boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.25)',
+    zIndex: 1,
+    '&:hover': {
+      opacity: 1,
+    },
+  },
+  
 })
 
 const Box = styled('div', {
-  width: '85%',
-  marginTop: '5rem'
 });
 const Img = styled('img', {
+  width: '100%',
+  height: '100%',
   objectFit: 'cover',
-  width: '70%',
-  height: '70%'
 });
 
 interface PropsImg {
@@ -34,7 +64,6 @@ export const AspectRatioDemo = ({ img, alt,title,descricao, tecnologia }: PropsI
     <Box
     css={{
       borderRadius: 6,
-      marginBottom: '20px',
       overflow: 'hidden',    
     }}
     >

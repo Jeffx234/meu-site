@@ -11,7 +11,7 @@ export function Dashboard() {
         <img src="/images/logo-whats.png" alt="icone-whatszap" 
             style={{
               position: 'fixed',
-              width: '4%',
+              width: '40px',
               top: '90%',
               bottom: '1rem',
               zIndex: '1',

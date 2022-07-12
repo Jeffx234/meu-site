@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import { GlobalStyled } from '../../styles/globals'
 import { ThemeProvider } from 'styled-components'
 import { theme } from '../../styles/theme'
+import '../../styles/tailwind.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

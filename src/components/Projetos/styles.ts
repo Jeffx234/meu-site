@@ -1,62 +1,35 @@
 import styled from "styled-components";
 
 export const Container = styled.section `
-
 margin-top: 8rem;
-border: 1px solid red;
 
 span {
     color: ${({theme}) => theme.colors.primary}
 }
-
-
   .proj {
     font-size: 2rem;
     text-align: center;
   }
 `
 export const Content = styled.div `
-  border: 1px solid blue;
-  padding: 0 4rem;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-
-
-  .cards {
-    border-radius: 7px;
-
-   
-    img {
-      border: 2px solid ${({theme}) => theme.colors.primary};
-    }
+  .projeto {
+    border: 2px solid ${({theme}) => theme.colors.primary};
+    border-radius: 8px;
+    padding: 2rem;
+    background: ${({theme}) => theme.colors.background};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
-  
-  
-  .icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 9rem;
-  height: 3rem;
-  border: 1px solid ${({theme}) => theme.colors.primary};
-  text-decoration: none;
-  color: #fff;
-  border-radius: 7px;
-  margin: 1rem 0;
-  padding: auto;
-  transition: filter 0.2s;
-
-  &:hover {
-    background: ${({theme}) => theme.colors.primary};;
-  }
-
-  svg {
-    margin-left: .5rem;
-  }
-}
   
   @media (max-width: 700px) {
     grid-template-columns: 1fr;

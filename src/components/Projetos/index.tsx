@@ -10,35 +10,61 @@ export function Projetos() {
     <Container>
       <h1 className="proj"> <span> &lt; </span>  Projetos <span> &gt;</span> </h1>
       <Content>
-        <div className="cards">
-          <AspectRatioDemo 
-              img="/images/ignews.png" alt="Projeto ignews"
-              title="Projeto ignews"
-              descricao="Ignews é um uma plataforma de pagamento"
-              tecnologia="Tecnologias usadas"
-            />
+        <ScrollReveal>
+          <div className="projeto">
+            <div className="projeto-img">
+             <AspectRatioDemo 
+                img="/images/ignews.png"
+                alt="Projeto 1"
+                title="Projeto 1"
+                descricao="Projeto 1"
+                tecnologia="Projeto 1"
+              />
+            </div>
+          </div>
+        </ScrollReveal>
 
-            <AspectRatioDemo 
-              img="/images/ignews.png" alt="Projeto ignews"
-              title="Projeto ignews"
-              descricao="Ignews é um uma plataforma de pagamento"
-              tecnologia="Tecnologias usadas"
-            />
-        </div>
-        <div className="cards">
-          <AspectRatioDemo 
-              img="/images/ignews.png" alt="Projeto ignews"
-              title="Projeto ignews"
-              descricao="Ignews é um uma plataforma de pagamento"
-              tecnologia="Tecnologias usadas"
-            />
-            <AspectRatioDemo 
-              img="/images/ignews.png" alt="Projeto ignews"
-              title="Projeto ignews"
-              descricao="Ignews é um uma plataforma de pagamento"
-              tecnologia="Tecnologias usadas"
-            />
-        </div>
+        <ScrollReveal>
+          <div className="projeto">
+            <div className="projeto-img">
+                <AspectRatioDemo 
+                  img="/images/dtmoney.gif"
+                  alt="Projeto 1"
+                  title="Projeto 1"
+                  descricao="Projeto 1"
+                  tecnologia="Projeto 1"
+                />
+            </div>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <div className="projeto">
+            <div className="projeto-img">
+              <AspectRatioDemo 
+                img="/images/ignews.png"
+                alt="Projeto 1"
+                title="Projeto 1"
+                descricao="Projeto 1"
+                tecnologia="Projeto 1"
+              />
+            </div>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <div className="projeto">
+            <div className="projeto-img">
+              <AspectRatioDemo 
+                img="/images/goRestaurant.png"
+                alt="Projeto 1"
+                title="Projeto 1"
+                descricao="Projeto 1"
+                tecnologia="Projeto 1"
+              />
+            </div>
+          </div>
+        </ScrollReveal>
       </Content>
     </Container>
   )
