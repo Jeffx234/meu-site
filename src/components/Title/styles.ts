@@ -8,7 +8,6 @@ export const Container = styled.main `
   color: white;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid ${({theme}) => theme.colors.primary};
   padding: 4rem;
 
   .helloworld {

@@ -3,7 +3,6 @@ export const theme = {
       background: '#121214',
       greenDarkMode: '#00875f',
       greenDark: '#015f43',
-      igniteLow: '#00291d',
       discoverBlue: '#4863f7',
       green: '#04d361',
       greenLow: '#1c2a24',
@@ -34,13 +33,8 @@ export const theme = {
       attention: '#fd951f',
       warningLight: '#fba94c',
       borders: '#323238',
-      experts: '#db3a2c',
-      dowhile: '#ff068a',
-      explorer: '#42d3ff',
       black: '#09090a',
       white: '#fff',
-      scrollbar: '#4d4d57',
-      discover: '#6a80ff',
   },
   
 }

@@ -3,12 +3,9 @@ import 'styled-components';
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
-      primary: string;
       background: string;
-      text: string;
       greenDarkMode: string;
       greenDark: string;
-      igniteLow: string;
       discoverBlue: string;
       green: string;
       greenLow: string;
@@ -39,13 +36,8 @@ declare module 'styled-components' {
       attention: string;
       warningLight: string;
       borders: string;
-      experts: string;
-      dowhile: string;
-      explorer: string;
       black: string;
       white: string;
-      scrollbar: string;
-      discover: string;
     }
   }
 }

@@ -11,7 +11,7 @@ export function IconName() {
     <Icon>
       <div className="item">
         <Link href="https://github.com/Jeffx234">
-         <a>
+         <a className="flex items-center flex-col">
             <AiFillGithub size={30}/>
             <p> Github </p>
           </a>
@@ -20,7 +20,7 @@ export function IconName() {
 
       <div className="item">
         <Link href="https://www.instagram.com/jefersonluis91/">
-          <a >
+          <a className="flex items-center flex-col">
             <AiOutlineInstagram size={30} />
             <p> Instagram </p>
           </a>
@@ -29,7 +29,7 @@ export function IconName() {
 
       <div className="item">
         <Link href="https://www.linkedin.com/in/jefersonluisx/">
-          <a>
+          <a className="flex items-center flex-col">
             <AiFillLinkedin size={30} />
             <p> Linkedin </p>
           </a>
@@ -38,7 +38,7 @@ export function IconName() {
 
       <div className="item">
         <Link href="https://api.whatsapp.com/send?phone=5521966591901">
-          <a>
+          <a className="flex items-center flex-col">
             <AiOutlineWhatsApp size={30} />
             <p> Whatszap </p>
           </a>
@@ -47,7 +47,7 @@ export function IconName() {
 
       <div className="item">
         <Link href="jefersonluisx@hotmail.com" >
-          <a >
+          <a className="flex items-center flex-col">
             <AiOutlineMail size={30} />
             <p> Email </p>
           </a>

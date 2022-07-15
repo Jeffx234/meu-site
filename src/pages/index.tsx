@@ -6,6 +6,7 @@ export default function Home() {
     <>
       <Head>
         <title>Jeferson Luis</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Dashboard />
     </>

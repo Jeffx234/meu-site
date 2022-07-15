@@ -60,8 +60,8 @@ body {
 export const Hr = styled.div `
   margin-top: 5rem;
   width: 100%;
-  background: black;
-  height: 2px;
+  background: ${({theme}) => theme.colors.shape};
+  height: 1px;
 
 `
 

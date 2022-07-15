@@ -56,10 +56,19 @@ export const Foto = styled.div`
   flex-direction: column;
   padding: .2rem;
 
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: 100%;
+    border-radius: .5rem;
+  }
+
 
   @media(max-width: 750px) {
     width: 100%;
     height: 230px;
+    padding: 2rem;
+
   }
 
   @media(min-width: 1048px) {
@@ -77,6 +86,10 @@ export const SobreMim = styled.div`
   width: 60%;
   text-align: center;
   border-left: 1px solid ${({theme}) => theme.colors.green};
+
+  @media(max-width: 700px) {
+    border: none;
+  }
 
   h2 {
     margin: 40px 0;
