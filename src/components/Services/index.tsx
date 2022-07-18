@@ -1,6 +1,6 @@
 export function Services() {
   return (
-    <div className="w-full flex flex-col items-center justify-center mt-8 p-8">
+    <div className="w-full flex flex-col items-center justify-center mt-8 p-8" id="services">
       <h1 className="text-4xl font-bold mb-8">
         Services
       </h1>

@@ -3,7 +3,7 @@ import { Container, Foto, SobreMim } from "./styles";
 
 export function Sobre () {
   return (
-    <Container>
+    <Container id="sobre">
       <Foto>
         <img src="/images/profile.jpg" alt="Foto jeferson"  />
       </Foto>

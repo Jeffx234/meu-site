@@ -18,6 +18,8 @@ export const Container = styled.main `
 
     img {
       width: 10%;
+      height: 10%;
+      margin-top: .8rem;
     }
 
 
@@ -77,7 +79,7 @@ position: relative;
   justify-content: center;
   width: 9rem;
   height: 3rem;
-  border: 1px solid ${({theme}) => theme.colors.primary};
+  border: 1px solid ${({theme}) => theme.colors.greenDarkMode};
   text-decoration: none;
   color: #fff;
   border-radius: 7px;
@@ -86,7 +88,7 @@ position: relative;
   transition: filter 0.2s;
 
   &:hover {
-    background: ${({theme}) => theme.colors.primary};;
+    background: ${({theme}) => theme.colors.greenDarkMode};;
   }
 
   svg {
@@ -100,13 +102,13 @@ p {
 }
   
   h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 
   p{
   
     span {
-      color: ${({theme}) => theme.colors.primary};
+      color: ${({theme}) => theme.colors.greenDarkMode};
       font-weight: bold;
     }
   }

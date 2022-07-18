@@ -21,28 +21,28 @@ export function Header () {
         <h1> Portifólio </h1>
         <ul>
           <li>
-            <Link href="https://github.com/">
-              <a> Home </a>
-            </Link>
-          </li>
-
-          <li>
-            <Link href="https://github.com/">
+            <Link href="#contact">
               <a> Contato </a>
             </Link>
           </li>
 
+          <li>
+            <Link href="#services">
+              <a> Serviços </a>
+            </Link>
+          </li>
+
 
           <li>
-            <Link href="https://github.com/">
+            <Link href="#sobre">
               <a> Sobre </a>
             </Link>
           </li>
 
 
           <li>
-            <Link href="https://github.com/">
-              <a> Home </a>
+            <Link href="#project">
+              <a> Projetos </a>
             </Link>
           </li>
         </ul> 
@@ -51,8 +51,8 @@ export function Header () {
             {
               openMenu ? (
                 <GiHamburgerMenu size="30" onClick={handleToggleMenu} />
-              ) : (
-                <p>deletar</p>
+                ) : (
+                  <GiHamburgerMenu size="30" onClick={handleToggleMenu} />
               )
             }
         </div>

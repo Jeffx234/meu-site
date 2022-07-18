@@ -24,11 +24,12 @@ nav {
   a {
     text-decoration: none;
     color: #fff;
-    transition: filter 0.2s;
+    transition: filter 0.5s;
+    padding: .5rem;
   }
 
   a:hover {
-    filter: brightness(0.6);
+    border-bottom: 2px solid ${({theme}) => theme.colors.greenDarkMode};
   }
 
   ul {

@@ -11,7 +11,7 @@ import Image from 'next/image';
 export function Title ()  {
 
   return (
-    <Container>
+    <Container id="contact">
       <Name className="absolute">
         <div className="helloworld">
           <img src="/images/Hi.gif" />

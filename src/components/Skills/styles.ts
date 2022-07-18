@@ -7,8 +7,6 @@ export const Container = styled.div `
     text-align: center;
     font-size: 2.3rem;
   }
-  
- 
 `
 export const Content = styled.div `
     display: grid;
@@ -17,7 +15,10 @@ export const Content = styled.div `
     padding: 1rem 2rem;
     
   @media (max-width: 750px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+
+    
   }
 
 `
