@@ -1,24 +1,21 @@
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { Container } from "./styles";
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { Container } from './styles'
 import Link from 'next/link'
-import { useState } from 'react';
+import { useState } from 'react'
+import { AiFillCloseCircle } from 'react-icons/ai'
 
-interface Props {
-  toggleTheme: () => void;
-}
-
-export function Header () {
-  const [openMenu, setOpenMenu] = useState(false);
+export function Header() {
+  const [openMenu, setOpenMenu] = useState(false)
 
   const handleToggleMenu = () => {
-    setOpenMenu(!openMenu);
+    setOpenMenu(!openMenu)
   }
 
-
-  return(
+  return (
     <Container>
       <nav>
         <h1> Portifólio </h1>
+
         <ul>
           <li>
             <Link href="#contact">
@@ -32,59 +29,57 @@ export function Header () {
             </Link>
           </li>
 
-
           <li>
             <Link href="#sobre">
               <a> Sobre </a>
             </Link>
           </li>
 
-
           <li>
             <Link href="#project">
               <a> Projetos </a>
             </Link>
           </li>
-        </ul> 
+        </ul>
 
         <div className="toggle">
-            {
-              openMenu ? (
-                <GiHamburgerMenu size="30" onClick={handleToggleMenu} />
-                ) : (
-                  <GiHamburgerMenu size="30" onClick={handleToggleMenu} />
-              )
-            }
+          {openMenu ? (
+            <GiHamburgerMenu size="30" onClick={handleToggleMenu} />
+          ) : (
+            <GiHamburgerMenu size="30" onClick={handleToggleMenu} />
+          )}
         </div>
-        {
-          openMenu ? (
-            <ul className="menu">
-              <li>
-                <Link href="">
-                  <a> Inicio </a>
-                </Link>
-              </li>
+        {openMenu ? (
+          <ul className="menu">
+            <li>
+              <AiFillCloseCircle
+                className="delete"
+                onClick={handleToggleMenu}
+              />
+              <Link href="#contact">
+                <a onClick={handleToggleMenu}> Contato </a>
+              </Link>
+            </li>
 
-              <li>
-                <Link href="">
-                  <a> Contato </a>
-                </Link>
-              </li>
+            <li>
+              <Link href="#services">
+                <a onClick={handleToggleMenu}> Serviços </a>
+              </Link>
+            </li>
 
-              <li>
-                <Link href="">
-                  <a> Home </a>
-                </Link>
-              </li>
+            <li>
+              <Link href="#sobre">
+                <a onClick={handleToggleMenu}> Sobre </a>
+              </Link>
+            </li>
 
-              <li>
-                <Link href="">
-                  <a> Sobre </a>
-                </Link>
-              </li>
-            </ul>
-          ) : null
-        }
+            <li>
+              <Link href="#project">
+                <a onClick={handleToggleMenu}> Projetos </a>
+              </Link>
+            </li>
+          </ul>
+        ) : null}
       </nav>
     </Container>
   )

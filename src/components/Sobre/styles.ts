@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const Container = styled.section `
+export const Container = styled.section`
   display: flex;
   margin-top: 8rem;
   justify-content: space-around;
@@ -13,14 +13,14 @@ export const Container = styled.section `
 
   img {
     width: 100%;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     height: 100%;
     object-fit: cover;
   }
 
   .item {
     svg {
-      color: ${({theme}) => theme.colors.greenDarkMode};
+      color: ${({ theme }) => theme.colors.greenDarkMode};
     }
     p {
       margin-top: 5px;
@@ -28,26 +28,25 @@ export const Container = styled.section `
 
     a {
       transition: filter 0.2s;
-      text-decoration: none; 
-      color: #fff;    
+      text-decoration: none;
+      color: #fff;
     }
 
-      a:hover {
-        filter: brightness(0.6);
+    a:hover {
+      filter: brightness(0.6);
     }
   }
 
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
     img {
       width: 100%;
       height: 100%;
       height: auto;
     }
- 
   }
 `
 
@@ -56,7 +55,7 @@ export const Foto = styled.div`
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  padding: .2rem;
+  padding: 0.2rem;
   width: 100%;
   height: 400px;
 
@@ -64,23 +63,19 @@ export const Foto = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: .5rem;
-    border-left: 4px solid ${({theme}) => theme.colors.greenDarkMode};
+    border-radius: 0.5rem;
+    border-left: 4px solid ${({ theme }) => theme.colors.greenDarkMode};
   }
 
-
-  @media(max-width: 750px) {
+  @media (max-width: 750px) {
     width: 100%;
     padding: 2rem;
   }
 
-  @media(min-width: 1048px) {
+  @media (min-width: 1048px) {
     width: 367px;
     height: 367px;
   }
-
-  
- 
 `
 
 export const SobreMim = styled.div`
@@ -88,9 +83,9 @@ export const SobreMim = styled.div`
   padding: 1rem;
   width: 60%;
   text-align: center;
-  border-left: 1px solid ${({theme}) => theme.colors.green};
+  border-left: 1px solid ${({ theme }) => theme.colors.green};
 
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     border: none;
     h1 {
       font-size: 2rem;
@@ -102,22 +97,20 @@ export const SobreMim = styled.div`
     font-size: 1rem;
   }
 
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     width: 100%;
     text-align: center;
   }
- 
 `
 
-export const Icon = styled.div `
+export const Icon = styled.div`
   margin: 40px 0;
   display: flex;
   justify-content: space-evenly;
 
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
-
 `

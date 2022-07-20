@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const Container = styled.main `
+export const Container = styled.main`
   width: 100%;
   display: flex;
   height: 600px;
@@ -19,20 +19,18 @@ export const Container = styled.main `
     img {
       width: 10%;
       height: 10%;
-      margin-top: .8rem;
+      margin-top: 0.8rem;
     }
-
 
     p {
       font-size: 1.5rem;
       margin-left: 1rem;
-      color: ${({theme}) => theme.colors.green};
+      color: ${({ theme }) => theme.colors.green};
       padding-top: 1.5rem;
     }
   }
-  
 
-  @media(max-width: 750px) {
+  @media (max-width: 750px) {
     padding-top: 0;
     flex-direction: column;
     align-items: center;
@@ -48,7 +46,6 @@ export const Container = styled.main `
     }
   }
 
-
   .image {
     width: 50%;
     height: 100%;
@@ -60,59 +57,53 @@ export const Container = styled.main `
       height: 100%;
       border-radius: 10px;
     }
-
   }
-
-`;
-
-
+`
 
 export const Name = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-position: relative;
-
-.icons {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 9rem;
-  height: 3rem;
-  border: 1px solid ${({theme}) => theme.colors.greenDarkMode};
-  text-decoration: none;
-  color: #fff;
-  border-radius: 7px;
-  margin: 1rem;
-  padding: auto;
-  transition: filter 0.2s;
+  position: relative;
 
-  &:hover {
-    background: ${({theme}) => theme.colors.greenDarkMode};;
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9rem;
+    height: 3rem;
+    border: 1px solid ${({ theme }) => theme.colors.greenDarkMode};
+    text-decoration: none;
+    color: #fff;
+    border-radius: 7px;
+    margin: 1rem;
+    padding: auto;
+    transition: filter 0.2s;
+
+    &:hover {
+      background: ${({ theme }) => theme.colors.greenDarkMode};
+    }
+
+    svg {
+      margin-left: 0.5rem;
+    }
   }
 
-  svg {
-    margin-left: .5rem;
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
-}
 
-p {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-}
-  
   h1 {
     font-size: 4.5rem;
   }
 
-  p{
-  
+  p {
     span {
-      color: ${({theme}) => theme.colors.greenDarkMode};
+      color: ${({ theme }) => theme.colors.greenDarkMode};
       font-weight: bold;
     }
   }
-
 
   .buttons {
     display: flex;
@@ -128,12 +119,10 @@ p {
     text-align: center;
 
     .whats {
-      margin-right: .3rem;
-      margin-top: .1rem;
+      margin-right: 0.3rem;
+      margin-top: 0.1rem;
     }
   }
-
-  
 
   img {
     width: 100px;
@@ -144,58 +133,43 @@ p {
     font-size: 1.5rem;
   }
 
-
-
-
-/* Responsividade */
-  @media(max-width: 750px) {
+  /* Responsividade */
+  @media (max-width: 750px) {
     text-align: center;
     width: 100%;
 
-
     h1 {
-    font-size: 2.3rem;
-    
-  }
+      font-size: 2.3rem;
+    }
 
-  p{
-    margin-bottom: 1rem;
+    p {
+      margin-bottom: 1rem;
 
-    span {
-      color: red;
-      font-weight: bold;
+      span {
+        color: red;
+        font-weight: bold;
+      }
+    }
+
+    button {
+      padding: 0.8rem 2rem;
+      cursor: pointer;
+      transition: filter 0.2s;
+      border-radius: 8px;
     }
   }
-
-  
-  button {
-    padding: .8rem 2rem;
-    cursor: pointer;
-    transition: filter 0.2s;
-    border-radius: 8px;
-  }
-
- 
-}
-  
 `
 
-
-export const Image = styled.div `
+export const Image = styled.div`
   margin-left: 2rem;
 
-  @media(max-width: 750px) {
+  @media (max-width: 750px) {
     img {
       display: none;
     }
   }
-   
-  
 
   img {
     width: 100%;
   }
-
-
-
 `

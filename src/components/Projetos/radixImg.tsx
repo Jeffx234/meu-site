@@ -1,9 +1,9 @@
-import React from 'react';
-import { styled } from '@stitches/react';
-import * as AspectRatioPrimitive from '@radix-ui/react-aspect-ratio';
+import React from 'react'
+import { styled } from '@stitches/react'
+import * as AspectRatioPrimitive from '@radix-ui/react-aspect-ratio'
 
 // Exports
-export const AspectRatio = AspectRatioPrimitive;
+export const AspectRatio = AspectRatioPrimitive
 
 // Your app...
 const BoxContainer = styled('div', {
@@ -40,40 +40,40 @@ const BoxContainer = styled('div', {
       opacity: 1,
     },
   },
-  
 })
 
-const Box = styled('div', {
-});
+const Box = styled('div', {})
 const Img = styled('img', {
   width: '100%',
   height: '100%',
   objectFit: 'cover',
-});
+})
 
 interface PropsImg {
-  img: string;
-  alt?: string;
-  title?: string;
-  descricao?: string;
-  tecnologia?: string;
+  img: string
+  alt?: string
+  title?: string
+  descricao?: string
+  tecnologia?: string
 }
 
-export const AspectRatioDemo = ({ img, alt,title,descricao, tecnologia }: PropsImg) => (
+export const AspectRatioDemo = ({
+  img,
+  alt,
+  title,
+  descricao,
+  tecnologia,
+}: PropsImg) => (
   <BoxContainer>
     <Box
-    css={{
-      borderRadius: 6,
-      overflow: 'hidden',    
-    }}
+      css={{
+        borderRadius: 6,
+        overflow: 'hidden',
+      }}
     >
-    <AspectRatio.Root ratio={16 / 9}>
-      <Img
-        src={img}
-        alt={alt}
-      />
-    </AspectRatio.Root>
+      <AspectRatio.Root ratio={16 / 9}>
+        <Img src={img} alt={alt} />
+      </AspectRatio.Root>
     </Box>
   </BoxContainer>
-);
-
+)

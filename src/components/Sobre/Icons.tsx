@@ -1,18 +1,20 @@
 import Link from 'next/link'
 import {
-  AiFillGithub, AiFillLinkedin, AiOutlineInstagram, AiOutlineMail, AiOutlineWhatsApp
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineInstagram,
+  AiOutlineMail,
+  AiOutlineWhatsApp,
 } from 'react-icons/ai'
 import { Icon } from './styles'
 
-
-
 export function IconName() {
-  return(
+  return (
     <Icon>
       <div className="item">
         <Link href="https://github.com/Jeffx234">
-         <a className="flex items-center flex-col">
-            <AiFillGithub size={30}/>
+          <a className="flex items-center flex-col">
+            <AiFillGithub size={30} />
             <p> Github </p>
           </a>
         </Link>
@@ -46,7 +48,7 @@ export function IconName() {
       </div>
 
       <div className="item">
-        <Link href="jefersonluisx@hotmail.com" >
+        <Link href="jefersonluisx@hotmail.com">
           <a className="flex items-center flex-col">
             <AiOutlineMail size={30} />
             <p> Email </p>
