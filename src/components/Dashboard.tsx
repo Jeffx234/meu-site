@@ -1,5 +1,6 @@
 import { Hr } from '../../styles/globals'
 import { Projetos } from './Projetos'
+import ScrollReveal from './Scrollreveal'
 import { Services } from './Services'
 import { Skills } from './Skills'
 import { Sobre } from './Sobre'
@@ -19,15 +20,25 @@ export function Dashboard() {
           className="fixed top-90 bottom-4 z-10 right-4 rounded-full w-14 h-14"
         />
       </a>
-      <Title />
+      <ScrollReveal>
+        <Title />
+      </ScrollReveal>
       <Hr />
-      <Sobre />
+      <ScrollReveal>
+        <Sobre />
+      </ScrollReveal>
       <Hr />
-      <Projetos />
+      <ScrollReveal>
+        <Projetos />
+      </ScrollReveal>
       <Hr />
-      <Services />
+      <ScrollReveal>
+        <Services />
+      </ScrollReveal>
       <Hr />
-      <Skills />
+      <ScrollReveal>
+        <Skills />
+      </ScrollReveal>
     </div>
   )
 }

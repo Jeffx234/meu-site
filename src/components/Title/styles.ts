@@ -30,7 +30,7 @@ export const Container = styled.main`
     }
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 920px) {
     padding-top: 0;
     flex-direction: column;
     align-items: center;
@@ -134,7 +134,7 @@ export const Name = styled.div`
   }
 
   /* Responsividade */
-  @media (max-width: 750px) {
+  @media (max-width: 920px) {
     text-align: center;
     width: 100%;
 
@@ -163,7 +163,7 @@ export const Name = styled.div`
 export const Image = styled.div`
   margin-left: 2rem;
 
-  @media (max-width: 750px) {
+  @media (max-width: 920px) {
     img {
       display: none;
     }

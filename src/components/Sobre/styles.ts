@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-  display: flex;
   margin-top: 8rem;
-  justify-content: space-around;
+  text-align: center;
   align-items: center;
   width: 100%;
 
@@ -36,18 +35,6 @@ export const Container = styled.section`
       filter: brightness(0.6);
     }
   }
-
-  @media (max-width: 700px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    img {
-      width: 100%;
-      height: 100%;
-      height: auto;
-    }
-  }
 `
 
 export const Foto = styled.div`
@@ -64,12 +51,14 @@ export const Foto = styled.div`
     height: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
-    border-left: 4px solid ${({ theme }) => theme.colors.greenDarkMode};
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 920px) {
     width: 100%;
     padding: 2rem;
+    margin-bottom: 0;
+    height: auto;
+    margin-right: 0;
   }
 
   @media (min-width: 1048px) {
@@ -85,7 +74,7 @@ export const SobreMim = styled.div`
   text-align: center;
   border-left: 1px solid ${({ theme }) => theme.colors.green};
 
-  @media (max-width: 700px) {
+  @media (max-width: 920px) {
     border: none;
     h1 {
       font-size: 2rem;
@@ -97,9 +86,10 @@ export const SobreMim = styled.div`
     font-size: 1rem;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 920px) {
     width: 100%;
-    text-align: center;
+    margin-left: 0;
+    padding: 1rem;
   }
 `
 
@@ -112,5 +102,27 @@ export const Icon = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+  }
+`
+export const Content = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: 920px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      height: auto;
+    }
+  }
+
+  h1 {
+    font-size: 5rem;
   }
 `

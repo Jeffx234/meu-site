@@ -16,7 +16,7 @@ export function Title() {
         </div>
         <p> Olá, Eu sou </p>
         <div className="rocket">
-          <h1> Jeferson Luis</h1>
+          <h1 className="animate__animated animate__bounce"> Jeferson Luis</h1>
         </div>
 
         <p className="position">

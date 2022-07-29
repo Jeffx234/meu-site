@@ -18,25 +18,25 @@ export function Header() {
 
         <ul>
           <li>
-            <Link href="#contact">
+            <Link href="#">
               <a> Contato </a>
             </Link>
           </li>
 
           <li>
-            <Link href="#services">
+            <Link href="#">
               <a> Serviços </a>
             </Link>
           </li>
 
           <li>
-            <Link href="#sobre">
+            <Link href="#">
               <a> Sobre </a>
             </Link>
           </li>
 
           <li>
-            <Link href="#project">
+            <Link href="#">
               <a> Projetos </a>
             </Link>
           </li>
@@ -56,25 +56,25 @@ export function Header() {
                 className="delete"
                 onClick={handleToggleMenu}
               />
-              <Link href="#contact">
+              <Link href="#">
                 <a onClick={handleToggleMenu}> Contato </a>
               </Link>
             </li>
 
             <li>
-              <Link href="#services">
+              <Link href="#">
                 <a onClick={handleToggleMenu}> Serviços </a>
               </Link>
             </li>
 
             <li>
-              <Link href="#sobre">
+              <Link href="#">
                 <a onClick={handleToggleMenu}> Sobre </a>
               </Link>
             </li>
 
             <li>
-              <Link href="#project">
+              <Link href="#">
                 <a onClick={handleToggleMenu}> Projetos </a>
               </Link>
             </li>

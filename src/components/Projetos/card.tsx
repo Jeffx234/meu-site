@@ -10,7 +10,7 @@ interface ImageProps {
 export function Card({ src, alt, title, date }: ImageProps) {
   return (
     <div className="p-4 md:w-full border-red-300">
-      <div className="h-full border-2 border-gray-200 border-opacity-60 roundedLg overflow-hidden">
+      <div className="h-full border-2 rounded-lg  border-opacity-60 roundedLg overflow-hidden">
         <div className="w-full">
           <div className="w-full flex p-2">
             <div className="p-2 ">

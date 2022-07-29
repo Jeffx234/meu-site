@@ -42,11 +42,11 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 
 body {
-  font-family: 'Opens-sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: ${({theme}) => theme.colors.background};
-  color: ${({theme}) => theme.colors.text};
-}
+  background: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.text};
+} 
 
 .container {
   max-width: 1480px;
@@ -57,11 +57,9 @@ body {
 
 `
 
-export const Hr = styled.div `
+export const Hr = styled.div`
   margin-top: 5rem;
   width: 100%;
-  background: ${({theme}) => theme.colors.shape};
+  background: ${({ theme }) => theme.colors.shape};
   height: 1px;
-
 `
-
