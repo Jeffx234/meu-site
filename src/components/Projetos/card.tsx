@@ -9,8 +9,8 @@ interface ImageProps {
 
 export function Card({ src, alt, title, date }: ImageProps) {
   return (
-    <div className="p-4 md:w-full border-red-300">
-      <div className="h-full border-2 rounded-lg  border-opacity-60 roundedLg overflow-hidden">
+    <div className="p-4 md:w-full ">
+      <div className="h-full border-2 border-solid border-x-green-500 rounded-lg  roundedLg overflow-hidden">
         <div className="w-full">
           <div className="w-full flex p-2">
             <div className="p-2 ">
@@ -40,10 +40,10 @@ export function Card({ src, alt, title, date }: ImageProps) {
             This is a blog template
           </h1>
           <div className="flex items-center flexWrap ">
-            <Link href="/">
+            <Link href="https://github.com/Jeffx234/dtmoney-ignite">
               <a className="text-green-800  md:mb-2 lg:mb-0">
                 <p className="inline-flex items-center">
-                  Read Blog
+                  ver no github
                   <svg
                     className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"

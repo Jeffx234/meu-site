@@ -53,7 +53,7 @@ export const Foto = styled.div`
     border-radius: 0.5rem;
   }
 
-  @media (max-width: 920px) {
+  @media (min-width: 320px) and (max-width: 480px) {
     width: 100%;
     padding: 2rem;
     margin-bottom: 0;
@@ -61,7 +61,15 @@ export const Foto = styled.div`
     margin-right: 0;
   }
 
-  @media (min-width: 1048px) {
+  @media (min-width: 481px) and (max-width: 916px) {
+    width: 70%;
+    padding: 2rem;
+    margin-bottom: 0;
+    height: auto;
+    margin-right: 0;
+  }
+
+  @media (min-width: 920px) {
     width: 367px;
     height: 367px;
   }

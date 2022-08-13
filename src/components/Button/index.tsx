@@ -1,17 +1,27 @@
-import { Container } from './styles'
+import { ContainerButton } from './styles'
 
 interface IProps {
   title: string
-  image?: any
+  icon?: any
+  onClick?: () => void
+  type?: 'button' | 'submit'
+  variant?:
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
+    | 'danger'
+    | 'success'
+    | 'warning'
+    | 'info'
+    | 'light'
+    | 'dark'
 }
 
-export function Button({ title, image }: IProps) {
+export function Button({ title, icon, variant }: IProps) {
   return (
-    <Container type="button">
-      <div className="button-img">
-        <div className="img">{image}</div>
-        <div className="title">{title}</div>
-      </div>
-    </Container>
+    <ContainerButton type="button" variant={variant}>
+      <span>{title}</span>
+      {icon}
+    </ContainerButton>
   )
 }

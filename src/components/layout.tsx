@@ -7,12 +7,6 @@ type IProps = {
 }
 
 export default function Layout({ children }: IProps) {
-  /* const [theme, setTheme] = useState('theme', dark)
-
-  const toggleTheme = () => {
-    setTheme(theme.title === 'light' ? dark : light)
-  } */
-
   return (
     <>
       <Header />

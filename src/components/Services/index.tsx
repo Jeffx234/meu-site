@@ -1,11 +1,13 @@
+import { SubTitle } from '../../../styles/globals'
+
 export function Services() {
   return (
     <div
       className="w-full flex flex-col items-center justify-center mt-8 p-8"
       id="services"
     >
-      <h1 className="text-4xl text-slate-200">Services</h1>
-      <div className="py-16">
+      <SubTitle>Serviços</SubTitle>
+      <div className="pt-16">
         <div className="container m-auto px-4 text-gray-500 md:px-12 xl:px-0">
           <div className="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3">
             <div className="border border-[#04d361] rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">

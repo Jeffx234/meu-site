@@ -1,13 +1,36 @@
 import styled from 'styled-components'
 
-export const Container = styled.button`
+interface ButtonProps {
+  variant?:
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
+    | 'danger'
+    | 'success'
+    | 'warning'
+    | 'info'
+    | 'light'
+    | 'dark'
+  size?: 'small' | 'medium' | 'large'
+  fullWidth?: boolean
+  disabled?: boolean
+  loading?: boolean
+  onClick?: () => void
+}
+
+export const ContainerButton = styled.button<ButtonProps>`
   display: flex;
   align-items: center;
-  height: 2.5rem;
+  display: ${({ loading }) => (loading ? 'none' : 'flex')};
   color: #fff;
+  background: ${(props) => props.theme.colors[props.variant]};
   cursor: pointer;
   transition: filter 0.2s;
   border-radius: 8px;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
   border: 0;
   width: 100%;
   text-align: center;

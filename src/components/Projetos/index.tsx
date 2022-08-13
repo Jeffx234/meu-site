@@ -1,12 +1,11 @@
-import Link from 'next/link'
+import { SubTitle } from '../../../styles/globals'
 import { Card } from './card'
-import { AspectRatioDemo } from './radixImg'
 import { Container, Content } from './styles'
 
 export function Projetos() {
   return (
     <Container id="project">
-      <h1 className="text-4xl text-center text-slate-100">Projetos</h1>
+      <SubTitle>Projetos</SubTitle>
       <Content>
         <Card
           src="/images/dtmoney.gif"
@@ -22,14 +21,8 @@ export function Projetos() {
         />
         <Card
           src="/images/ignews.png"
-          alt="dtmoney"
-          title="dtmoney"
-          date="20 julho"
-        />
-        <Card
-          src="/images/dtmoney.gif"
-          alt="dtmoney"
-          title="dtmoney"
+          alt="Ignews"
+          title="Ignews"
           date="20 julho"
         />
       </Content>

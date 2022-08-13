@@ -4,24 +4,19 @@ export const Container = styled.main`
   width: 100%;
   display: flex;
   height: 600px;
-  text-align: center;
   color: white;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem;
-
+  padding: 3rem;
   .helloworld {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 2rem;
-
     img {
       width: 10%;
       height: 10%;
       margin-top: 0.8rem;
     }
-
     p {
       font-size: 1.5rem;
       margin-left: 1rem;
@@ -29,8 +24,7 @@ export const Container = styled.main`
       padding-top: 1.5rem;
     }
   }
-
-  @media (max-width: 920px) {
+  @media (max-width: 768px) {
     padding-top: 0;
     flex-direction: column;
     align-items: center;
@@ -40,18 +34,15 @@ export const Container = styled.main`
     .image {
       display: none;
     }
-
     h1 {
       text-align: center;
     }
   }
-
   .image {
     width: 50%;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
-
     img {
       width: 100%;
       height: 100%;
@@ -63,113 +54,78 @@ export const Container = styled.main`
 export const Name = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: relative;
+  width: 50%;
 
-  .icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 9rem;
-    height: 3rem;
-    border: 1px solid ${({ theme }) => theme.colors.greenDarkMode};
-    text-decoration: none;
-    color: #fff;
-    border-radius: 7px;
-    margin: 1rem;
-    padding: auto;
-    transition: filter 0.2s;
-
-    &:hover {
-      background: ${({ theme }) => theme.colors.greenDarkMode};
-    }
-
-    svg {
-      margin-left: 0.5rem;
-    }
-  }
-
-  p {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-
-  h1 {
-    font-size: 4.5rem;
-  }
-
-  p {
-    span {
-      color: ${({ theme }) => theme.colors.greenDarkMode};
-      font-weight: bold;
-    }
-  }
-
-  .buttons {
-    display: flex;
-
-    button {
-      margin-right: 1rem;
-      background: #141452;
-    }
-  }
-
-  .contato {
-    margin-left: 1rem;
-    text-align: center;
-
-    .whats {
-      margin-right: 0.3rem;
-      margin-top: 0.1rem;
-    }
-  }
-
-  img {
-    width: 100px;
-  }
-
-  .position {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
-
-  /* Responsividade */
-  @media (max-width: 920px) {
-    text-align: center;
+  @media (min-width: 320px) and (max-width: 768px) {
     width: 100%;
-
-    h1 {
-      font-size: 2.3rem;
-    }
-
-    p {
-      margin-bottom: 1rem;
-
-      span {
-        color: red;
-        font-weight: bold;
-      }
-    }
-
-    button {
-      padding: 0.8rem 2rem;
-      cursor: pointer;
-      transition: filter 0.2s;
-      border-radius: 8px;
-    }
+    text-align: center;
+    margin-top: 2rem;
   }
 `
 
 export const Image = styled.div`
   margin-left: 2rem;
-
-  @media (max-width: 920px) {
+  @media (max-width: 768px) {
     img {
       display: none;
     }
   }
-
   img {
     width: 100%;
+  }
+`
+
+export const Description = styled.div`
+  font-size: 1rem;
+  color: ${({ theme }) => theme.colors.text};
+`
+export const Heading = styled.h1`
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+`
+export const SubTitle = styled.h2`
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+  span {
+    color: ${({ theme }) => theme.colors.greenDarkMode};
+  }
+`
+export const ContainerButton = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  a {
+    border: 2px solid ${({ theme }) => theme.colors.greenDarkMode};
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: ${({ theme }) => theme.colors.greenDarkMode};
+      color: ${({ theme }) => theme.colors.white};
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    a {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: center;
+    }
   }
 `

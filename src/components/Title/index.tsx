@@ -1,29 +1,33 @@
-import { BsArrowDownCircle } from 'react-icons/bs'
-import { FaWhatsapp } from 'react-icons/fa'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
-import { Button } from '../../components/Button'
-import { Container, Name } from './styles'
-import Link from 'next/link'
-import Image from 'next/image'
+import {
+  Container,
+  Description,
+  Heading,
+  Name,
+  SubTitle,
+  ContainerButton,
+} from './styles'
 
 export function Title() {
   return (
     <Container id="contact">
       <Name className="absolute">
-        <div className="helloworld">
-          <img src="/images/Hi.gif" />
-          <p> Hello world! </p>
-        </div>
-        <p> Olá, Eu sou </p>
         <div className="rocket">
-          <h1 className="animate__animated animate__bounce"> Jeferson Luis</h1>
+          <Heading>
+            <span>Jeferson Luis</span>
+          </Heading>
         </div>
 
-        <p className="position">
-          {' '}
-          Desenvolvedor Front-end <span> Health Mobile</span>{' '}
-        </p>
-        <div className="buttons">
+        <SubTitle>
+          Desenvolvedor Front-end <span> Health mobile </span>
+        </SubTitle>
+        <Description>
+          <p>
+            Meu nome é Jeferson Luis, sou um desenvolvedor front-end e
+            desenvolvo soluções para aplicações web e mobile.
+          </p>
+        </Description>
+        <ContainerButton>
           <a
             href="https://www.linkedin.com/in/jefersonluisx/"
             target="_blank"
@@ -43,7 +47,7 @@ export function Title() {
             Github
             <AiFillGithub size="20" />
           </a>
-        </div>
+        </ContainerButton>
       </Name>
       <div className="image">
         <img src="/images/logger.png" alt="Foto logo" />

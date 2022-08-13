@@ -1,10 +1,11 @@
+import { SubTitle } from '../../../styles/globals'
 import { IconName } from './Icons'
 import { Container, Foto, SobreMim, Content } from './styles'
 
 export function Sobre() {
   return (
     <Container id="sobre">
-      <h1 className="text-4xl mb-8 text-slate-100"> Sobre mim</h1>
+      <SubTitle>Sobre mim</SubTitle>
       <Content>
         <Foto>
           <img src="/images/profile.jpg" alt="Foto jeferson" />

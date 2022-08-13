@@ -1,98 +1,100 @@
 import styled from 'styled-components'
 
-export const Container = styled.header`
-  padding: 1.3rem;
+export const HeaderContainer = styled.header`
+  padding: 1rem 3rem;
   width: 100%;
   z-index: 9999;
   background: ${({ theme }) => theme.colors.shape};
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+`
 
-  .menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-
-    background: ${({ theme }) => theme.colors.shape};
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    transition: all 40s ease-in-out;
-    z-index: 9999;
-    gap: 4rem;
-    font-size: 3rem;
-
-    .delete {
-      color: ${({ theme }) => theme.colors.text};
-      font-size: 1.5rem;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 9999;
-      width: 2rem;
-      height: 2rem;
-      margin: 1.8rem 2.5rem;
-
-      &:hover {
-        filter: brightness(0.8);
-      }
-    }
-    &.open {
-      transform: translateX(100%);
+export const MenuHeaderNav = styled.nav`
+  color: ${({ theme }) => theme.colors.white};
+  a {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid ${({ theme }) => theme.colors.shape};
+    color: ${({ theme }) => theme.colors.white};
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0.5rem;
+    &:hover {
+      border: 2px solid ${({ theme }) => theme.colors.greenDarkMode};
     }
   }
 
-  .toggle {
+  @media (max-width: 920px) {
     display: none;
   }
+`
+export const HeaderLeft = styled.div`
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+`
+export const HeaderRight = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 
-  nav {
+  ul {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 0.5rem;
+    width: 100%;
 
-    h1 {
-      padding-left: 1rem;
-      color: #fff;
-    }
-
-    a {
-      text-decoration: none;
-      color: #fff;
-      transition: filter 0.5s;
-      padding: 0.5rem;
-    }
-
-    a:hover {
-      border-bottom: 2px solid ${({ theme }) => theme.colors.greenDarkMode};
-    }
-
-    ul {
+    li {
       display: flex;
-
-      li {
-        list-style: none;
-        padding: 0 2rem;
-      }
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      width: 100%;
     }
   }
 
-  @media (max-width: 700px) {
-    .toggle {
-      cursor: pointer;
-      padding-right: 1rem;
-      display: block;
+  button {
+    border-radius: 5px;
+    border: 2px solid ${({ theme }) => theme.colors.shape};
+    transition: all 0.3s ease-in-out;
+    padding: 0.1rem;
+    &:hover {
+      border: 2px solid ${({ theme }) => theme.colors.greenDarkMode};
     }
+  }
+`
 
-    margin-bottom: 4rem;
+export const ModalMenuMobileContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 
-    nav {
-      ul {
-        display: none;
-      }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    li {
+      color: ${({ theme }) => theme.colors.white};
+      font-size: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      width: 100%;
     }
+  }
+`
+
+export const MenuModalContainer = styled.div`
+  @media (min-width: 920px) {
+    display: none;
   }
 `

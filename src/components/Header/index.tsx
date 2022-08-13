@@ -1,86 +1,62 @@
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { Container } from './styles'
+import {
+  HeaderRight,
+  HeaderLeft,
+  HeaderContainer,
+  ModalMenuMobileContainer,
+  MenuModalContainer,
+} from './styles'
 import Link from 'next/link'
-import { useState } from 'react'
-import { AiFillCloseCircle } from 'react-icons/ai'
+import { AiOutlineMenu } from 'react-icons/ai'
+import { MenuHeader } from './Menu'
+import { useModal } from '../../hooks/useModal'
+import { Modal } from '../Modal'
 
 export function Header() {
-  const [openMenu, setOpenMenu] = useState(false)
-
-  const handleToggleMenu = () => {
-    setOpenMenu(!openMenu)
-  }
+  const { isOpen, handleClose, handleOpen } = useModal()
 
   return (
-    <Container>
-      <nav>
-        <h1> Portifólio </h1>
+    <HeaderContainer>
+      <HeaderLeft>
+        <h2> Jeferson Luis | Dev </h2>
+      </HeaderLeft>
+      <HeaderRight>
+        <MenuHeader />
+        <MenuModalContainer>
+          <Modal isOpen={isOpen} onRequestClose={handleClose}>
+            <ModalMenuMobile />
+          </Modal>
+          <AiOutlineMenu size={25} onClick={handleOpen} />
+        </MenuModalContainer>
+      </HeaderRight>
+    </HeaderContainer>
+  )
+}
 
-        <ul>
-          <li>
-            <Link href="#">
-              <a> Contato </a>
-            </Link>
-          </li>
-
-          <li>
-            <Link href="#">
-              <a> Serviços </a>
-            </Link>
-          </li>
-
-          <li>
-            <Link href="#">
-              <a> Sobre </a>
-            </Link>
-          </li>
-
-          <li>
-            <Link href="#">
-              <a> Projetos </a>
-            </Link>
-          </li>
-        </ul>
-
-        <div className="toggle">
-          {openMenu ? (
-            <GiHamburgerMenu size="30" onClick={handleToggleMenu} />
-          ) : (
-            <GiHamburgerMenu size="30" onClick={handleToggleMenu} />
-          )}
-        </div>
-        {openMenu ? (
-          <ul className="menu">
-            <li>
-              <AiFillCloseCircle
-                className="delete"
-                onClick={handleToggleMenu}
-              />
-              <Link href="#">
-                <a onClick={handleToggleMenu}> Contato </a>
-              </Link>
-            </li>
-
-            <li>
-              <Link href="#">
-                <a onClick={handleToggleMenu}> Serviços </a>
-              </Link>
-            </li>
-
-            <li>
-              <Link href="#">
-                <a onClick={handleToggleMenu}> Sobre </a>
-              </Link>
-            </li>
-
-            <li>
-              <Link href="#">
-                <a onClick={handleToggleMenu}> Projetos </a>
-              </Link>
-            </li>
-          </ul>
-        ) : null}
-      </nav>
-    </Container>
+function ModalMenuMobile() {
+  return (
+    <ModalMenuMobileContainer>
+      <ul>
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/about">
+            <a>About</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/services">
+            <a>Services</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact">
+            <a>Contact</a>
+          </Link>
+        </li>
+      </ul>
+    </ModalMenuMobileContainer>
   )
 }
