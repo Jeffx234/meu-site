@@ -17,13 +17,16 @@ export function Header() {
   return (
     <HeaderContainer>
       <HeaderLeft>
-        <h2> Jeferson Luis | Dev </h2>
+        <h2>
+          {' '}
+          Jeff <span> -dev- </span>{' '}
+        </h2>
       </HeaderLeft>
       <HeaderRight>
         <MenuHeader />
         <MenuModalContainer>
           <Modal isOpen={isOpen} onRequestClose={handleClose}>
-            <ModalMenuMobile />
+            <ModalMenuMobile onClick={handleClose} />
           </Modal>
           <AiOutlineMenu size={25} onClick={handleOpen} />
         </MenuModalContainer>
@@ -32,28 +35,28 @@ export function Header() {
   )
 }
 
-function ModalMenuMobile() {
+function ModalMenuMobile({ onClick }) {
   return (
     <ModalMenuMobileContainer>
       <ul>
         <li>
           <Link href="/">
-            <a>Home</a>
+            <a onClick={onClick}>Inicio</a>
           </Link>
         </li>
         <li>
-          <Link href="/about">
-            <a>About</a>
+          <Link href="#about">
+            <a onClick={onClick}>Sobre</a>
           </Link>
         </li>
         <li>
-          <Link href="/services">
-            <a>Services</a>
+          <Link href="#services">
+            <a onClick={onClick}>Serviços</a>
           </Link>
         </li>
         <li>
-          <Link href="/contact">
-            <a>Contact</a>
+          <Link href="/certification">
+            <a onClick={onClick}>Certificados</a>
           </Link>
         </li>
       </ul>

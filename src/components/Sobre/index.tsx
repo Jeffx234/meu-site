@@ -13,10 +13,11 @@ export function Sobre() {
         <SobreMim>
           <h2> Rio de Janeiro, Brasil</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cum
-            eum labore commodi reprehenderit, minima ducimus earum omnis sequi,
-            animi, quam facilis deleniti eos amet? Molestias, eligendi. Tenetur,
-            iusto soluta?
+            Meu nome é Jeferson Luis, tenho 27 anos e sou um desenvolvedor
+            front-end. Estou cursando Análise e desenvolvimento de sistemas na
+            Universidade Estácio de Sá. Atualmente estou trabalhando como
+            desenvolvedor front-end na Healh mobile. Apaixonado por tecnologia e
+            por desenvolver soluções que possam ajudar a vida das pessoas.
           </p>
           <IconName />
         </SobreMim>

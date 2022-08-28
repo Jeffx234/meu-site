@@ -1,4 +1,5 @@
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import { AiFillLinkedin } from 'react-icons/ai'
+import { BiDownload } from 'react-icons/bi'
 import {
   Container,
   Description,
@@ -28,24 +29,19 @@ export function Title() {
           </p>
         </Description>
         <ContainerButton>
-          <a
-            href="https://www.linkedin.com/in/jefersonluisx/"
-            target="_blank"
-            rel="noreferrer"
-            className="icons"
-          >
-            Linkedin
-            <AiFillLinkedin size="20" />
+          <a href="/JefersonLuisSantana.pdf" className="icons" download>
+            Download CV
+            <BiDownload size="20" />
           </a>
 
           <a
-            href="https://www.github.com/jeffx234"
+            href="https://www.linkedin.com/in/jefersonluisx/"
             target="_blank"
             className="icons"
             rel="noreferrer"
           >
-            Github
-            <AiFillGithub size="20" />
+            Linkedin
+            <AiFillLinkedin size="20" />
           </a>
         </ContainerButton>
       </Name>

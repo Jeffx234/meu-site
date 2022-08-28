@@ -80,7 +80,7 @@ export const SobreMim = styled.div`
   padding: 1rem;
   width: 60%;
   text-align: center;
-  border-left: 1px solid ${({ theme }) => theme.colors.green};
+  border-left: 2px solid ${({ theme }) => theme.colors.greenDark};
 
   @media (max-width: 920px) {
     border: none;

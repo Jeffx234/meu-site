@@ -8,22 +8,28 @@ export function Projetos() {
       <SubTitle>Projetos</SubTitle>
       <Content>
         <Card
-          src="/images/dtmoney.gif"
+          srcImage="/images/dtmoney.gif"
           alt="dtmoney"
           title="dtmoney"
           date="20 julho"
+          name="Controle financeiro"
+          src="https://github.com/Jeffx234/dtmoney-ignite"
         />
         <Card
-          src="/images/goRestaurant.png"
+          srcImage="/images/goRestaurant.png"
           alt="dtmoney"
           title="dtmoney"
           date="20 julho"
+          name="Sistema de restaurante"
+          src="https://github.com/Jeffx234/desafio-4-ignite-reactjs"
         />
         <Card
-          src="/images/ignews.png"
+          srcImage="/images/ignews.png"
           alt="Ignews"
           title="Ignews"
           date="20 julho"
+          name="Ignews - Notícias"
+          src="https://github.com/Jeffx234/ignews"
         />
       </Content>
     </Container>

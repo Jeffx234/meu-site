@@ -13,7 +13,6 @@ export const Container = styled.section`
 `
 export const Content = styled.div`
   display: grid;
-  background: ${({ theme }) => theme.colors.borders};
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
   margin-top: 2rem;

@@ -10,19 +10,15 @@ export function Services() {
       <div className="pt-16">
         <div className="container m-auto px-4 text-gray-500 md:px-12 xl:px-0">
           <div className="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3">
-            <div className="border border-[#04d361] rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
+            <div className="border border-slate-100 rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
               <div className="mb-12 space-y-4">
                 <h3 className="text-2xl font-semibold text-slate-100">
-                  Graphic Design
+                  Desenvolvimento de aplicações web
                 </h3>
                 <p className="mb-6">
-                  Obcaecati, quam? Eligendi, nulla numquam natus laborum porro
-                  at cum, consectetur ullam tempora ipsa iste officia sed
-                  officiis! Incidunt ea animi officiis.
+                  Desenvolvimento de aplicações web para aplicações web , sites,
+                  blogs etc...
                 </p>
-                <a href="#" className="block font-medium text-slate-100">
-                  Know more
-                </a>
               </div>
               <img
                 src="https://tailus.io/sources/blocks/end-image/preview/images/graphic.svg"
@@ -33,19 +29,14 @@ export function Services() {
                 height="600"
               />
             </div>
-            <div className="border border-[#04d361] rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
+            <div className="border border-slate-100 rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
               <div className="mb-12 space-y-4">
                 <h3 className="text-2xl font-semibold text-slate-100">
-                  UI Design
+                  Desenvolvimento de aplicações mobile
                 </h3>
                 <p className="mb-6">
-                  Obcaecati, quam? Eligendi, nulla numquam natus laborum porro
-                  at cum, consectetur ullam tempora ipsa iste officia sed
-                  officiis! Incidunt ea animi officiis.
+                  Desenvolvimento de aplicações para dispositivos móveis etc...
                 </p>
-                <a href="#" className="block font-medium text-slate-100">
-                  Know more
-                </a>
               </div>
               <img
                 src="https://tailus.io/sources/blocks/end-image/preview/images/ui-design.svg"
@@ -56,19 +47,14 @@ export function Services() {
                 height="600"
               />
             </div>
-            <div className="border border-[#04d361] rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
+            <div className="border border-slate-100 rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
               <div className="mb-12 space-y-4">
                 <h3 className="text-2xl font-semibold text-slate-100">
-                  UX Design
+                  Design de interfaces
                 </h3>
                 <p className="mb-6">
-                  Obcaecati, quam? Eligendi, nulla numquam natus laborum porro
-                  at cum, consectetur ullam tempora ipsa iste officia sed
-                  officiis! Incidunt ea animi officiis.
+                  Design de interfaces para aplicações web, sites, blogs etc...
                 </p>
-                <a href="#" className="block font-medium text-slate-100">
-                  Know more
-                </a>
               </div>
               <img
                 src="https://tailus.io/sources/blocks/end-image/preview/images/ux-design.svg"

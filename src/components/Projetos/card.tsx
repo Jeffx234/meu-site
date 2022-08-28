@@ -1,16 +1,18 @@
 import Link from 'next/link'
 
 interface ImageProps {
-  src: string
+  srcImage: string
   alt: string
   title: string
   date: string
+  name: string
+  src: string
 }
 
-export function Card({ src, alt, title, date }: ImageProps) {
+export function Card({ srcImage, src, alt, title, date, name }: ImageProps) {
   return (
     <div className="p-4 md:w-full ">
-      <div className="h-full border-2 border-solid border-x-green-500 rounded-lg  roundedLg overflow-hidden">
+      <div className="h-full border-2 border-solid rounded-lg  roundedLg overflow-hidden">
         <div className="w-full">
           <div className="w-full flex p-2">
             <div className="p-2 ">
@@ -28,19 +30,17 @@ export function Card({ src, alt, title, date }: ImageProps) {
         </div>
         <img
           className="lg:h-48 md:h-36 w-full object-cover object-center"
-          src={src}
+          src={srcImage}
           alt={alt}
         />
 
         <div className="p-4">
           <h2 className="trackingWidest text-xs title-font font-bold text-green-400 mb-1 uppercase ">
-            Web development
+            {name}
           </h2>
-          <h1 className="title-font textLg font-medium text-gray-900 mb-3">
-            This is a blog template
-          </h1>
+
           <div className="flex items-center flexWrap ">
-            <Link href="https://github.com/Jeffx234/dtmoney-ignite">
+            <Link href={src}>
               <a className="text-green-800  md:mb-2 lg:mb-0">
                 <p className="inline-flex items-center">
                   ver no github
@@ -59,7 +59,7 @@ export function Card({ src, alt, title, date }: ImageProps) {
                 </p>
               </a>
             </Link>
-            <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+            <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1  ">
               <svg
                 className="w-4 h-4 mr-1"
                 viewBox="0 0 24 24"

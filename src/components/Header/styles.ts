@@ -32,6 +32,11 @@ export const HeaderLeft = styled.div`
   h2 {
     font-size: 1.5rem;
     font-weight: bold;
+    color: ${({ theme }) => theme.colors.white};
+  }
+
+  span {
+    color: ${({ theme }) => theme.colors.greenDarkMode};
   }
 `
 export const HeaderRight = styled.div`

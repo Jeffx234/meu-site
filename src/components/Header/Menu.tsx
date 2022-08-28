@@ -3,20 +3,20 @@ import { MenuHeaderNav } from './styles'
 
 export const MenuLists = [
   {
-    title: 'Home',
+    title: 'Inicio',
     link: '/',
   },
   {
-    title: 'About',
-    link: '/about',
+    title: 'Sobre',
+    link: '#about',
   },
   {
-    title: 'Services',
-    link: '/services',
+    title: 'Serviços',
+    link: '#services',
   },
   {
-    title: 'Contact',
-    link: '/contact',
+    title: 'Certificados',
+    link: '/certification',
   },
 ]
 
