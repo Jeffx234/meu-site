@@ -1,4 +1,8 @@
-import { Container, Content, ContentItem } from './styled'
+import {
+  Container,
+  Content,
+  ContentItem,
+} from '../../../styles/styledcertification'
 
 export default function Certification() {
   return (
