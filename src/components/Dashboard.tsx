@@ -5,6 +5,7 @@ import { Services } from './Services'
 import { Skills } from './Skills'
 import { Sobre } from './Sobre'
 import { Title } from './Title'
+import { Divider } from '@chakra-ui/react'
 
 export function Dashboard() {
   return (
@@ -23,19 +24,16 @@ export function Dashboard() {
       <ScrollReveal>
         <Title />
       </ScrollReveal>
-      <Hr />
       <ScrollReveal>
         <Sobre />
       </ScrollReveal>
-      <Hr />
       <ScrollReveal>
         <Projetos />
       </ScrollReveal>
-      <Hr />
+      <Divider />
       <ScrollReveal>
         <Services />
       </ScrollReveal>
-      <Hr />
       <ScrollReveal>
         <Skills />
       </ScrollReveal>
