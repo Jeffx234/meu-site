@@ -1,5 +1,7 @@
 import { ReactNode } from 'react'
+
 import { GiHamburgerMenu } from 'react-icons/gi'
+
 import {
   Box,
   Flex,
@@ -8,11 +10,11 @@ import {
   Menu,
   MenuButton,
   MenuList,
-  useDisclosure,
   useColorModeValue,
   Stack,
   useColorMode,
 } from '@chakra-ui/react'
+
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 
 interface HeaderProps {
@@ -42,7 +44,7 @@ const NavLink = ({ children, href }: HeaderProps) => (
 
 export function Header() {
   const { colorMode, toggleColorMode } = useColorMode()
-  const { isOpen, onOpen, onClose } = useDisclosure()
+
   return (
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
@@ -65,17 +67,19 @@ export function Header() {
                 >
                   <GiHamburgerMenu size={30} />
                 </MenuButton>
+
                 <MenuList
                   alignItems={'center'}
                   display={'flex'}
                   flexDirection={'column'}
                   gridGap={2}
                 >
-                  <NavLink>Certificados</NavLink>
-                  <NavLink>Experiências</NavLink>
-                  <NavLink>Projetos</NavLink>
-                  <NavLink>Contato</NavLink>
-                  <NavLink>Sobre</NavLink>
+                  <NavLink href="/">Inicio</NavLink>
+                  <NavLink href="#sobre">Sobre</NavLink>
+                  <NavLink href="#habilidades">Habilidades</NavLink>
+                  <NavLink href="#projetos">Projetos</NavLink>
+                  <NavLink href="#contato">Contato</NavLink>
+                  <NavLink href="/certification">Certificados</NavLink>
                 </MenuList>
               </Menu>
             </Stack>

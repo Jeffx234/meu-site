@@ -1,17 +1,20 @@
-import Link from 'next/link'
 import {
   AiFillGithub,
   AiFillLinkedin,
   AiOutlineInstagram,
-  AiOutlineMail,
   AiOutlineWhatsApp,
 } from 'react-icons/ai'
-import { Icon } from './styles'
-import { Flex, Text, Box, Button, useColorModeValue } from '@chakra-ui/react'
+
+import { Box, Button, useColorModeValue, Grid } from '@chakra-ui/react'
 
 export function IconName() {
   return (
-    <Flex gridGap="5" mt="auto" justifyContent="space-around" h="100%">
+    <Grid
+      h="100%"
+      gridGap="5"
+      w="100%"
+      templateColumns={{ base: 'repeat(3, 1fr)', md: 'repeat(5, 1fr)' }}
+    >
       <Box>
         <Button
           as="a"
@@ -24,6 +27,7 @@ export function IconName() {
           alignItems="center"
           _hover={{
             bg: 'blue.500',
+
             color: `${useColorModeValue('white', '')}`,
           }}
         >
@@ -47,6 +51,7 @@ export function IconName() {
           alignItems="center"
           _hover={{
             bg: 'blue.500',
+
             color: `${useColorModeValue('white', '')}`,
           }}
         >
@@ -70,6 +75,7 @@ export function IconName() {
           alignItems="center"
           _hover={{
             bg: 'blue.500',
+
             color: `${useColorModeValue('white', '')}`,
           }}
         >
@@ -94,6 +100,7 @@ export function IconName() {
           target="_blank"
           _hover={{
             bg: 'blue.500',
+
             color: `${useColorModeValue('white', '')}`,
           }}
         >
@@ -117,6 +124,7 @@ export function IconName() {
           alignItems="center"
           _hover={{
             bg: 'blue.500',
+
             color: `${useColorModeValue('white', '')}`,
           }}
         >
@@ -127,6 +135,6 @@ export function IconName() {
           Github
         </Button>
       </Box>
-    </Flex>
+    </Grid>
   )
 }

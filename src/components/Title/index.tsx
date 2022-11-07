@@ -1,5 +1,7 @@
 import { AiFillLinkedin } from 'react-icons/ai'
+
 import { BiDownload } from 'react-icons/bi'
+
 import {
   Flex,
   Box,
@@ -19,7 +21,12 @@ export function Title() {
       alignItems="center"
       p="10"
     >
-      <Flex flexDirection="column">
+      <Flex
+        flexDirection="column"
+        maxW={{ base: '500px', md: '700px', lg: '900px' }}
+        textAlign={{ base: 'center', md: 'left' }}
+        alignItems={{ base: 'center', md: 'flex-start' }}
+      >
         <Box>
           <Heading
             mb="5"
@@ -41,12 +48,14 @@ export function Title() {
             Health mobile{' '}
           </Text>
         </Text>
+
         <Box mt="3">
           <Text color="gray.500" fontSize="md">
             Meu nome é Jeferson Luis, sou um desenvolvedor front-end e
             desenvolvo soluções para aplicações web e mobile.
           </Text>
         </Box>
+
         <Flex mt="5" gridGap="5">
           <Button
             as="a"
@@ -90,7 +99,8 @@ export function Title() {
           </Button>
         </Flex>
       </Flex>
-      <Box ml="10">
+
+      <Box ml="10" display={{ base: 'none', md: 'block' }}>
         <Image src="/images/logger.png" alt="Foto logo" />
       </Box>
     </Flex>
