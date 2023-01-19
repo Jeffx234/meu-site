@@ -24,7 +24,7 @@ export function Services() {
           <div className="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3">
             <div className="border border-slate-100 rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
               <div className="mb-12 space-y-4">
-                <h3 className="text-2xl font-semibold text-slate-100">
+                <h3 className="text-2xl font-semibold ">
                   Desenvolvimento de aplicações web
                 </h3>
 
@@ -46,7 +46,7 @@ export function Services() {
 
             <div className="border border-slate-100 rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
               <div className="mb-12 space-y-4">
-                <h3 className="text-2xl font-semibold text-slate-100">
+                <h3 className="text-2xl font-semibold ">
                   Desenvolvimento de aplicações mobile
                 </h3>
 
@@ -67,7 +67,7 @@ export function Services() {
 
             <div className="border border-slate-100 rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
               <div className="mb-12 space-y-4">
-                <h3 className="text-2xl font-semibold text-slate-100">
+                <h3 className="text-2xl font-semibold ">
                   Design de interfaces
                 </h3>
 

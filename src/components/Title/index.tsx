@@ -42,10 +42,10 @@ export function Title() {
           color={useColorModeValue('gray.700', 'gray.200')}
           fontWeight="bold"
         >
-          Desenvolvedor Front-end{' '}
+          Software Developer Intern
           <Text as="span" color="blue.500" fontWeight="bold">
             {' '}
-            Health mobile{' '}
+            &nbsp;|&nbsp; BTG Pactual
           </Text>
         </Text>
 

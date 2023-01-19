@@ -59,9 +59,8 @@ export function Sobre() {
           >
             Meu nome é Jeferson Luis, tenho 27 anos e sou um desenvolvedor
             front-end. Estou cursando Análise e desenvolvimento de sistemas na
-            Universidade Estácio de Sá. Atualmente estou trabalhando como
-            desenvolvedor front-end na Healh mobile. Apaixonado por tecnologia e
-            por desenvolver soluções que possam ajudar a vida das pessoas.
+            Universidade Estácio de Sá. Atualmente estou trabalhando como IT
+            Intern na BTG Pactual.
           </Text>
 
           <IconName />

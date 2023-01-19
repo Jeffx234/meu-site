@@ -13,77 +13,54 @@ export function IconName() {
       h="100%"
       gridGap="5"
       w="100%"
-      templateColumns={{ base: 'repeat(3, 1fr)', md: 'repeat(5, 1fr)' }}
+      templateColumns={{ base: 'repeat(3, 1fr)', md: 'repeat(4, 1fr)' }}
     >
-      <Box>
+      <Box borderRadius="full" h="100%" w="100%">
         <Button
           as="a"
           href="https://github.com/Jeffx234"
           rounded="full"
-          h="60px"
-          display="flex"
-          bg="transparent"
-          flexDir="column"
-          alignItems="center"
-          _hover={{
-            bg: 'blue.500',
-
-            color: `${useColorModeValue('white', '')}`,
-          }}
+          bg="yellow.500"
+          h="100%"
+          color="white"
+          _hover={{ bg: 'yellow.600' }}
         >
           <AiFillGithub
             size={30}
             color={useColorModeValue('gray.200', 'gray.200')}
           />
-          Github
         </Button>
       </Box>
 
-      <Box>
+      <Box w="100%">
         <Button
           as="a"
           href="https://www.linkedin.com/in/jefersonluisx"
           rounded="full"
           h="60px"
-          display="flex"
-          bg="transparent"
-          flexDir="column"
+          bg="blue.600"
+          color="white"
           alignItems="center"
-          _hover={{
-            bg: 'blue.500',
-
-            color: `${useColorModeValue('white', '')}`,
-          }}
+          _hover={{ bg: 'blue.700' }}
         >
           <AiFillLinkedin
             size={30}
             color={useColorModeValue('gray.200', 'gray.200')}
           />
-          Linkedin
         </Button>
       </Box>
 
-      <Box>
+      <Box w="100%">
         <Button
           as="a"
           href="https://www.instagram.com/jefersonluis91/"
           rounded="full"
           h="60px"
-          display="flex"
-          bg="transparent"
-          flexDir="column"
-          alignItems="center"
-          _hover={{
-            bg: 'blue.500',
-
-            color: `${useColorModeValue('white', '')}`,
-          }}
+          bg="red.400"
+          color="white"
+          _hover={{ bg: 'red.500' }}
         >
-          <AiOutlineInstagram
-            size={30}
-            color={useColorModeValue('gray.200', 'gray.200')}
-          />
-          Instagram
+          <AiOutlineInstagram size={30} />
         </Button>
       </Box>
 
@@ -93,46 +70,12 @@ export function IconName() {
           href="https://api.whatsapp.com/send?phone=5521966591901"
           rounded="full"
           h="60px"
-          display="flex"
-          bg="transparent"
-          flexDir="column"
-          alignItems="center"
           target="_blank"
-          _hover={{
-            bg: 'blue.500',
-
-            color: `${useColorModeValue('white', '')}`,
-          }}
+          color="white"
+          bg="green.500"
+          _hover={{ bg: 'green.600' }}
         >
-          <AiOutlineWhatsApp
-            size={30}
-            color={useColorModeValue('gray.200', 'gray.200')}
-          />
-          Whatszap
-        </Button>
-      </Box>
-
-      <Box>
-        <Button
-          as="a"
-          href="https://github.com/Jeffx234"
-          rounded="full"
-          h="60px"
-          display="flex"
-          bg="transparent"
-          flexDir="column"
-          alignItems="center"
-          _hover={{
-            bg: 'blue.500',
-
-            color: `${useColorModeValue('white', '')}`,
-          }}
-        >
-          <AiFillGithub
-            size={30}
-            color={useColorModeValue('gray.200', 'gray.200')}
-          />
-          Github
+          <AiOutlineWhatsApp size={30} />
         </Button>
       </Box>
     </Grid>

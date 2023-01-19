@@ -1,5 +1,4 @@
 import { ReactNode } from 'react'
-
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 import {
@@ -49,7 +48,16 @@ export function Header() {
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box>Portifólio Jeferson Luis</Box>
+          <Box flex={'1 1 auto'} ml={2}>
+            <Link
+              href="/"
+              fontSize={'2xl'}
+              fontWeight={'bold'}
+              color={useColorModeValue('gray.800', 'white')}
+            >
+              Jeferson Luis
+            </Link>
+          </Box>
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
