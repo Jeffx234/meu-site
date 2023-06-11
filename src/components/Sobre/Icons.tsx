@@ -4,80 +4,50 @@ import {
   AiOutlineInstagram,
   AiOutlineWhatsApp,
 } from 'react-icons/ai'
-
-import { Box, Button, useColorModeValue, Grid } from '@chakra-ui/react'
+import { Box, useColorModeValue } from '@chakra-ui/react'
 
 export function IconName() {
   return (
-    <Grid
-      h="100%"
-      gridGap="5"
-      w="100%"
-      templateColumns={{ base: 'repeat(3, 1fr)', md: 'repeat(4, 1fr)' }}
-    >
-      <Box borderRadius="full" h="100%" w="100%">
-        <Button
-          as="a"
+    <Box display="flex" justifyContent="center" alignItems="center" gridGap="2">
+      <Box m={2} backgroundColor="yellow.500" borderRadius="50%" p={2}>
+        <a
           href="https://github.com/Jeffx234"
-          rounded="full"
-          bg="yellow.500"
-          h="100%"
-          color="white"
-          _hover={{ bg: 'yellow.600' }}
-        >
-          <AiFillGithub
-            size={30}
-            color={useColorModeValue('gray.200', 'gray.200')}
-          />
-        </Button>
-      </Box>
-
-      <Box w="100%">
-        <Button
-          as="a"
-          href="https://www.linkedin.com/in/jefersonluisx"
-          rounded="full"
-          h="60px"
-          bg="blue.600"
-          color="white"
-          alignItems="center"
-          _hover={{ bg: 'blue.700' }}
-        >
-          <AiFillLinkedin
-            size={30}
-            color={useColorModeValue('gray.200', 'gray.200')}
-          />
-        </Button>
-      </Box>
-
-      <Box w="100%">
-        <Button
-          as="a"
-          href="https://www.instagram.com/jefersonluis91/"
-          rounded="full"
-          h="60px"
-          bg="red.400"
-          color="white"
-          _hover={{ bg: 'red.500' }}
-        >
-          <AiOutlineInstagram size={30} />
-        </Button>
-      </Box>
-
-      <Box>
-        <Button
-          as="a"
-          href="https://api.whatsapp.com/send?phone=5521966591901"
-          rounded="full"
-          h="60px"
           target="_blank"
-          color="white"
-          bg="green.500"
-          _hover={{ bg: 'green.600' }}
+          rel="noopener noreferrer"
         >
-          <AiOutlineWhatsApp size={30} />
-        </Button>
+          <AiFillGithub size={24} color="yellow.500" />
+        </a>
       </Box>
-    </Grid>
+
+      <Box m={2} backgroundColor="blue.600" borderRadius="50%" p={2}>
+        <a
+          href="https://www.linkedin.com/in/jefersonluisx"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillLinkedin size={24} color="blue.600" />
+        </a>
+      </Box>
+
+      <Box m={2} backgroundColor="red.400" borderRadius="50%" p={2}>
+        <a
+          href="https://www.instagram.com/jefersonluis91/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiOutlineInstagram size={24} color="red.400" />
+        </a>
+      </Box>
+
+      <Box m={2} backgroundColor="green.500" borderRadius="50%" p={2}>
+        <a
+          href="https://api.whatsapp.com/send?phone=5521966591901"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiOutlineWhatsApp size={24} color="green.500" />
+        </a>
+      </Box>
+    </Box>
   )
 }

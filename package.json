@@ -19,7 +19,7 @@
     "@radix-ui/react-aspect-ratio": "^0.1.4",
     "@stitches/react": "^1.2.8",
     "animate.css": "^4.1.1",
-    "framer-motion": "^6",
+    "framer-motion": "^10.12.16",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",

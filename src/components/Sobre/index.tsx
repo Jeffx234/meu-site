@@ -1,71 +1,112 @@
-import { Box, Flex, Text, useColorModeValue, Image } from '@chakra-ui/react'
-
+import {
+  Box,
+  Flex,
+  Text,
+  Image,
+  useColorModeValue,
+  useBreakpointValue,
+} from '@chakra-ui/react'
+import { motion } from 'framer-motion'
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineInstagram,
+  AiOutlineWhatsApp,
+} from 'react-icons/ai'
 import { IconName } from './Icons'
 
 export function Sobre() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  }
+
+  const imageVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: { opacity: 1, x: 0 },
+  }
+
+  const textVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  }
+
+  const isMobile = useBreakpointValue({ base: true, md: false })
+
   return (
-    <Box
-      id="sobre"
-      mt="10"
-      justifyContent="center"
-      alignItems="center"
-      p="10"
-      h="auto"
-    >
+    <Flex borderRadius="md" mt={16} alignItems="center">
       <Flex
-        justifyContent={{ base: 'center', md: 'space-between' }}
-        alignItems="center"
-        h="100%"
+        borderRadius="md"
         w="100%"
-        gridGap={10}
-        direction={{ base: 'column', md: 'row', lg: 'row' }}
+        p={4}
+        m={4}
+        flexDirection={isMobile ? 'column' : 'row'}
+        alignItems="flex-start"
       >
-        <Box w={{ base: '70%', md: '50%', lg: '30%' }}>
-          <Image
-            src="/images/profile.jpg"
-            alt="Foto jeferson"
-            w="100%"
-            borderRadius="5px"
-          />
-        </Box>
-
-        <Flex
-          w={{ base: '100%', md: '60%', lg: '50%' }}
-          textAlign="center"
+        <Image
+          src="./images/profile.jpg"
+          alt="Profile Image"
+          borderRadius="md"
+          boxSize="150px"
+          m="0 auto"
+          w={['100%', '100%', '30%']}
           h="100%"
-          flexDirection="column"
+          border="2px solid"
+          borderColor={useColorModeValue('gray.200', 'gray.700')}
+          objectFit="contain"
+          objectPosition="center"
+          boxShadow="md"
+          mr={4}
+          initial="hidden"
+          animate="visible"
+          variants={imageVariants}
+        />
+
+        <Box
+          textAlign="left"
+          w={['100%', '100%', '70%']}
+          ml={[0, 0, 4]}
+          mt={[isMobile ? 4 : 0, isMobile ? 4 : 0, 0]}
+          borderLeft={isMobile ? 'none' : '2px solid'}
+          borderColor={isMobile ? 'none' : 'blue.500'}
+          mt={isMobile && 4}
         >
-          <Text
-            as="h2"
-            fontSize="3xl"
-            fontWeight="bold"
-            color={useColorModeValue('gray.700', 'gray.200')}
-            textAlign="center"
-            mb="10"
+          <Box
+            p={4}
+            h={['auto', 'auto', '85%']}
+            borderRadius="md"
+            ml={[0, 0, 16]}
           >
-            Sobre mim
-          </Text>
+            <Text fontSize="2xl" fontWeight="bold" mt={4}>
+              Sobre Mim
+            </Text>
 
-          <Text color="gray.500" fontSize="md" mb="5">
-            {' '}
-            Rio de Janeiro, Brasil
-          </Text>
-
-          <Text
-            color="gray.500"
-            fontSize="md"
-            lineHeight="1.5"
-            mb={{ base: 5, md: 10, lg: 20 }}
-          >
-            Meu nome é Jeferson Luis, tenho 27 anos e sou um desenvolvedor
-            front-end. Estou cursando Análise e desenvolvimento de sistemas na
-            Universidade Estácio de Sá. Atualmente estou trabalhando como IT
-            Intern na BTG Pactual.
-          </Text>
-
-          <IconName />
-        </Flex>
+            <Text fontSize="md" mt={2}>
+              Olá, eu sou Jeferson Luis, um desenvolvedor front-end apaixonado
+              por tecnologia e determinado em criar soluções inovadoras que
+              aprimorem a vida das pessoas. Com 28 anos de idade, estou
+              atualmente cursando Análise e Desenvolvimento de Sistemas na
+              Universidade Estácio de Sá, onde tenho a oportunidade de aprimorar
+              minhas habilidades técnicas. Minha paixão pela tecnologia começou
+              cedo e cresceu ao longo dos anos, impulsionada pela minha
+              curiosidade incessante em explorar novas tendências e ferramentas
+              no campo do desenvolvimento front-end. Acredito firmemente no lema
+              "Um dia sem superação, é um dia perdido", o que me motiva a
+              enfrentar desafios e buscar constantemente maneiras de aprimorar
+              minhas habilidades e conhecimentos técnicos. Estou sempre buscando
+              aprender novas tecnologias e tendências emergentes no campo do
+              desenvolvimento front-end, para que eu possa aplicar as melhores
+              práticas e oferecer soluções inovadoras aos meus projetos. Sou
+              adepto de abordagens ágeis e colaborativas, e estou constantemente
+              buscando maneiras de otimizar os processos de desenvolvimento e
+              aumentar a eficiência.
+            </Text>
+          </Box>
+          <Box h={['auto', 'auto', '15%']} mt={4}>
+            <IconName />
+          </Box>
+        </Box>
       </Flex>
-    </Box>
+    </Flex>
   )
 }

@@ -1,4 +1,4 @@
-import { Hr } from '../../styles/globals'
+import { Experience } from './Experience'
 import { Projetos } from './Projetos'
 import ScrollReveal from './Scrollreveal'
 import { Services } from './Services'
@@ -26,6 +26,9 @@ export function Dashboard() {
       </ScrollReveal>
       <ScrollReveal>
         <Sobre />
+      </ScrollReveal>
+      <ScrollReveal>
+        <Experience />
       </ScrollReveal>
       <ScrollReveal>
         <Projetos />
